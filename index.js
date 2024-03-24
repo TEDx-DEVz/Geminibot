@@ -74,6 +74,16 @@ client.on("messageCreate", async (message) => {
     console.error(error.stack);
   }
 });
+const newCommands = [
+    {
+        name: 'ping',
+        description: 'Replies with bot ping!',
+    },
+    // Add other commands as necessary
+];
+
+// Register commands
+await client.application.commands.set(newCommands);
 
 // Import the ping command
 const pingCommand = require('./ping.js');
