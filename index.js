@@ -30,8 +30,11 @@ const client = new discord.Client({
   intents: Object.keys(discord.GatewayIntentBits),
 });
 
-client.on("ready", () => {
+client.on("ready", async () => {
   console.log("Bot is ready!");
+  
+  // Call the function to register slash commands
+  await registerCommands();
 });
 
 client.on("messageCreate", async (message) => {
@@ -74,35 +77,7 @@ client.on("messageCreate", async (message) => {
     console.error(error.stack);
   }
 });
-const newCommands = [
-    {
-        name: 'ping',
-        description: 'Replies with bot ping!',
-    },
-    // Add other commands as necessary
-];
 
-// Register commands
-await client.application.commands.set(newCommands);
-
-// Import the ping command
-const pingCommand = require('./ping.js');
-
-// Register the ping command
-client.on('interactionCreate', async (interaction) => {
-  if (!interaction.isCommand()) return;
-
-  if (interaction.commandName === pingCommand.name) {
-    try {
-      await pingCommand.callback(client, interaction);
-    } catch (error) {
-      console.error('Error executing ping command:', error);
-      await interaction.reply({ content: 'There was an error while executing this command!', ephemeral: true });
-    }
-  } else if (interaction.commandName === 'your_other_command') {
-    // Handle other commands similarly
-  }
-});
 // Function to register slash commands
 async function registerCommands() {
     try {
@@ -126,10 +101,24 @@ async function registerCommands() {
     }
 }
 
-// Bot event handlers, message handling, etc.
+// Import the ping command
+const pingCommand = require('./ping.js');
+
+// Register the ping command
+client.on('interactionCreate', async (interaction) => {
+  if (!interaction.isCommand()) return;
+
+  if (interaction.commandName === pingCommand.name) {
+    try {
+      await pingCommand.callback(client, interaction);
+    } catch (error) {
+      console.error('Error executing ping command:', error);
+      await interaction.reply({ content: 'There was an error while executing this command!', ephemeral: true });
+    }
+  } else if (interaction.commandName === 'your_other_command') {
+    // Handle other commands similarly
+  }
+});
 
 // Log in to Discord
 client.login(BOT_TOKEN);
-
-// Call the registerCommands function at the top level
-registerCommands();
