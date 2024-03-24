@@ -103,7 +103,33 @@ client.on('interactionCreate', async (interaction) => {
     // Handle other commands similarly
   }
 });
+// Function to register slash commands
+async function registerCommands() {
+    try {
+        // Unregister existing commands
+        await client.application.commands.set([]);
+
+        // Register new commands
+        const newCommands = [
+            {
+                name: 'ping',
+                description: 'Replies with bot ping!',
+            },
+            // Add other commands as necessary
+        ];
+
+        await client.application.commands.set(newCommands);
+
+        console.log('Slash commands reloaded successfully.');
+    } catch (error) {
+        console.error('Error reloading slash commands:', error);
+    }
+}
+
+// Bot event handlers, message handling, etc.
 
 // Log in to Discord
 client.login(BOT_TOKEN);
 
+// Call the registerCommands function at the top level
+registerCommands();
