@@ -4,7 +4,7 @@ const app = express()
 app.get('/', (req, res) => {
   res.redirect('/web');
 });
-app.use('/dashboard', express.static('dashboard'));
+app.use('/web', express.static('web'));
 
 app.listen(3000);
 const discord = require("discord.js");
