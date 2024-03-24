@@ -2,9 +2,9 @@ const express = require("express")
 const app = express()
 
 app.get('/', (req, res) => {
-  res.redirect('/web');
+  res.redirect('web');
 });
-app.use('/web', express.static('web'));
+app.use('web', express.static('web'));
 
 app.listen(3000);
 const discord = require("discord.js");
