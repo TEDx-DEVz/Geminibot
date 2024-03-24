@@ -1,21 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Gemini AI Bot</title>
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <div class="container">
-    <h1>Welcome to Gemini AI Bot</h1>
-    <div class="chat-container" id="chat-container">
-      <!-- Chat messages will be appended here -->
-    </div>
-    <input type="text" id="user-input" placeholder="Type a message...">
-    <button onclick="sendMessage()">Send</button>
-  </div>
 
-  <script src="script.js"></script>
-</body>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cludo Dashboard</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>   
+
+<body>
+
+    <header class="header">
+        <a href="#" class="logo">Cludo.</a>
+
+        <nav class="navbar">
+            <a href="#" class="active">Home</a>
+            <a href="#">About</a>
+            <a href="#">Vote</a>
+            <a href="#">Discord</a>
+            <a href="#">Devloper</a>
+        </nav>
+    </header>
+
+    <section class="home">
+        <div class="home-content">
+            <h1>Hi, I'm Cludo</h1>
+            <h3>Advance discord bot</h3>
+            <p>Welcome to the world of Cludo, the Discord bot designed to revolutionize your server experience with its advanced features and expansive command library. Cludo is not just your average bot; it's a versatile companion crafted to enhance every aspect of your Discord community.</p>
+            <div class="btn-box">
+                <a href="https://discord.com/api/oauth2/authorize?client_id=1071766414358216788&permissions=8&scope=bot+applications.commands">Invite Me</a>
+                <a href="https://discord.gg/2gkXJ92BWU">Support</a>
+            </div>
+        </div>
+
+        <div class="home-sci">
+            <a href="https://instagram.com/ig.thunderx"><i class='bx bxl-instagram'></i></a>
+            <a href="https://twitter.com"><i class='bx bxl-twitter'></i></a>
+            <a href="https://discord.gg/2gkXJ92BWU"><i class='bx bxl-discord-alt'></i></a>
+        </div>
+
+        <span class="home-imgHover"></span>
+    </section>
+
+</body> 
 </html>
