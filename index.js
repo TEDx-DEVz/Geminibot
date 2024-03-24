@@ -1,12 +1,19 @@
-const express = require("express")
-const app = express()
+const express = require("express");
+const app = express();
+const port = 3000;
 
+// Middleware to serve static files from the 'public' directory
+app.use(express.static('public'));
+
+// Route handling for the root URL
 app.get('/', (req, res) => {
-  res.redirect('web');
+  res.send('Hello, World!');
 });
-app.use(express.static('web'));
 
-app.listen(3000);
+// Start the server
+app.listen(port, () => {
+  console.log(`Server is running at http://localhost:${port}`);
+});
 const discord = require("discord.js");
 const { GoogleGenerativeAI } = require("@google/generative-ai");
 require('dotenv').config();
