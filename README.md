@@ -56,7 +56,7 @@ We love contributions! Feel free to open issues or send PRs to help make GeminiB
 
 📄 License
 
-MIT License — do whatever you want, just don’t blame us 😄
+[MIT License](/LICENSE)
 
 ---
 
