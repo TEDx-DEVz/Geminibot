@@ -1,3 +1,5 @@
+// DEVLOPED BY zZyreXx
+
 module.exports = {
   name: 'ping',
   description: "Replies with bot ping!",
