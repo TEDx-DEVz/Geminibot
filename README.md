@@ -3,7 +3,7 @@
 
 🎉 Welcome to **GeminiBot**, your all-in-one Discord companion powered by the cutting-edge Gemini AI! Whether you want smart AI chat, powerful moderation, or just some fun with your community — GeminiBot’s got your back.
 
-🔗 Discord: https://discord.gg/your-invite  
+🔗 Discord: [GeminiAi](https://discord.gg/your-invite)  
 🐞 GitHub Issues: https://github.com/TEDx-DEVz/Geminibot/issues  
 📜 License: MIT
 
@@ -42,8 +42,7 @@ GeminiBot is a next-level Discord bot designed to make your server smarter and m
 
 🚀 How to Use
 
-Invite GeminiBot to your server here:  
-(here)[https://discord.com/oauth2/authorize?client_id=YOUR_CLIENT_ID&scope=bot+applications.commands&permissions=YOUR_PERMISSIONS]
+Invite GeminiBot to your server [here:](https://discord.com/oauth2/authorize?client_id=YOUR_CLIENT_ID&scope=bot+applications.commands&permissions=YOUR_PERMISSIONS)  
 
 Try commands like `/chat`, `/ping`, `/help` and explore what GeminiBot can do!
 
