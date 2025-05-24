@@ -4,7 +4,7 @@
 🎉 Welcome to **GeminiBot**, your all-in-one Discord companion powered by the cutting-edge Gemini AI! Whether you want smart AI chat, powerful moderation, or just some fun with your community — GeminiBot’s got your back.
 
 🔗 Discord: https://discord.gg/your-invite  
-🐞 GitHub Issues: https://github.com/your-username/geminibot/issues  
+🐞 GitHub Issues: https://github.com/Geminibot/geminibot/issues  
 📜 License: MIT
 
 ---
